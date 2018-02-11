@@ -1,0 +1,9 @@
+branches:
+  only:
+    - master
+language: bash
+script:
+  - make auto-update
+env:
+  global:
+    secure: vMKBYtiUBJvZQq0eEEWcIJCJsf7BuJA5Bo7K2AyO/6tMuVlG2G6X7mZDAbrBS7vYtmssLBm9GrMUvRSpCFjPpWO3wn5lp0F+Lrx5KvGObWOc8gf0QO+B1hntU/b/xadMlVB2CnTqoYo0B6VQ7oGHDt/GkFNJRMH5weCxIDoBOAj/pp1GqymEdszxg+FGagF6Xu4Vhaqr2dujTSOffQTC6yPzrL1H20KMGuKAsEpAQJo53Dm0W9NSZdhNkD4O5Sc7jLGmZFjjd+Vb8Io75bo/19ZqckV3NNPnwSmStMShQ8wL5m25Q6gjv9OZX1B/SYJ/qLYEwvC+JminUBvUtNvrnwk80xUD7zmfI6ApElgmtFOdfvE4WpTd4V6+dJ1pqBAriUHvCtiIEIBNiqkqwejiigLrsiKR/cFpKnr/rlpKwMQL2x1X5b+Dpphr7S/+/jgrS9QyMjMJG4Qj5pH8FTBlskR0XOZJnGGYLf9m6G/duPHFjJC+tjzg6FL6wJd1PbTiTCGTtHwACHTMx9QLIiPGdvI7WsnJTOJHBsp55I5rbEZZedWzihnA9LD5Ink+OHv/PoIbOAV/ixCQUJIz7yrI1IYya1aGONjQLcRxhGCfzJQfK/UWX7JOegMQV78Ar0DOgzr/wKy5UA7+oJQhV3JbQ9aI7Nt1fKVEiU369L0/2U0=

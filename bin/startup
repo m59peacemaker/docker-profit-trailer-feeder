@@ -1,0 +1,10 @@
+#!/bin/sh
+
+APPDIR="/usr/local/lib/feeder"
+
+rm -r "$APPDIR/config"
+
+ln -sf "/appdata/config/feeder" "$APPDIR/config"
+ln -sf "/appdata/logs" "$APPDIR/logs"
+
+feeder
