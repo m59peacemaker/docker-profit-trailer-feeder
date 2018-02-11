@@ -1,0 +1,6 @@
+#!/bin/sh
+
+( \
+  cd /usr/local/lib/feeder; \
+  dotnet pt-feeder.dll \
+)
