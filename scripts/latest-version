@@ -2,8 +2,8 @@
 
 . ./scripts/vars
 
-# github repo
-LATEST_RELEASE="$(curl -L -s -H "Accept: application/json" "https://github.com/$SOURCE/releases/latest")"
-LATEST_VERSION="$(echo $LATEST_RELEASE | sed -e 's/.*\"tag_name":\"pt-feeder-v\([^\"]*\)\".*/\1/')"
+# github repo tags
+TAGS="$(curl --location --silent -H "Accept: application/json" "https://api.github.com/repos/$SOURCE/tags")"
+LATEST_VERSION="$(echo "$TAGS" | grep '"name"' | head -1 | sed -e 's/.*\"name\": \"pt-feeder-v\([^\"]\+\)\".*/\1/')"
 
 printf "$LATEST_VERSION"
