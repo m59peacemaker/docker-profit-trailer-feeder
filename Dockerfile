@@ -43,7 +43,8 @@ VOLUME /appdata/config/feeder
 VOLUME /appdata/config/pt
 VOLUME /appdata/logs
 
-EXPOSE 5001
+# not used for now
+#EXPOSE 5001
 
 USER ptfuser
 WORKDIR /appdata
