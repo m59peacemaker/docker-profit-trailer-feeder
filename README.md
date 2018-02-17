@@ -19,15 +19,15 @@ pmkr/profit-trailer-feeder
 
 ## volumes
 
-### /appdata/config/feeder
+### `/appdata/config/feeder`
 
 Mount the Feeder config directory containing `hostsettings.json` and `appsettings.json` here.
 
-### /appdata/config/pt
+### `/appdata/config/pt`
 
 Mount the ProfitTrailer directory containing `application.properties` and `configuration.properties` here.
 
-### /appdata/logs
+### `/appdata/logs`
 
 Mount the directory for Feeder logs here.
 
