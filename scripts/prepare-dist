@@ -9,5 +9,6 @@ echo "$TRAVIS_BUILD_NUMBER" > dist/build_number
 cp .travis.yml dist/
 
 # build and/or copy relevant files into dist/
-cp -r bin dist/
+cp README.md dist/
 sed "s/{FEEDER_VERSION}/$VERSION/" Dockerfile.template > dist/Dockerfile
+cp -r bin dist/
