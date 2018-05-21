@@ -1,6 +1,6 @@
 FROM debian:stretch as gh-deps
 
-ENV FEEDER_VERSION 1.5.1.685
+ENV FEEDER_VERSION 1.6.0.855
 
 RUN apt-get update && apt-get install -y wget unzip
 
@@ -20,7 +20,7 @@ RUN \
 FROM microsoft/dotnet:2.0.5-runtime-stretch as dotnet
 #FROM microsoft/dotnet-nightly:2.1-runtime-alpine as dotnet
 
-ENV FEEDER_VERSION 1.5.1.685
+ENV FEEDER_VERSION 1.6.0.855
 
 COPY --from=gh-deps /usr/local/lib/feeder /usr/local/lib/feeder
 
